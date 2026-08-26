@@ -21,5 +21,13 @@ tabs.forEach((tab) => {
 
     let currentTabElement = document.getElementById(`content-${currentTab}`);
     console.log(currentTabElement);
+
+    if (!isActive) {
+      tabContents.forEach((tabContent) =>
+        tabContent.classList.remove("active"),
+      );
+    }
+
+    currentTabElement.classList.add("active");
   });
 });
