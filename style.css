@@ -174,16 +174,16 @@ a {
   animation: fadeIn 600ms ease-out 200ms both;
 }
 .tab-content.active .content-label {
-  animation: slideRight 600ms ease-out 200ms both;
+  animation: slideRight 500ms ease-out 200ms both;
 }
 .tab-content.active h2 {
-  animation: slideRight 600ms ease-out 400ms both;
+  animation: slideRight 500ms ease-out 400ms both;
 }
 .tab-content.active p {
-  animation: slideRight 600ms ease-out 600ms both;
+  animation: slideRight 500ms ease-out 600ms both;
 }
 .tab-content.active a {
-  animation: slideRight 600ms ease-out 800ms both;
+  animation: slideRight 500ms ease-out 800ms both;
 }
 
 .content-number {
