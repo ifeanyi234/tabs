@@ -61,6 +61,7 @@ a {
   font-weight: 700;
   letter-spacing: 0.18em;
   color: #777;
+  animation: slideRight 600ms ease-out 100ms both;
 }
 
 .intro h1 {
@@ -69,6 +70,7 @@ a {
   letter-spacing: -0.04em;
   font-weight: 700;
   margin-bottom: 20px;
+  animation: slideRight 600ms ease-out 600ms both;
 }
 
 .intro p {
@@ -76,6 +78,7 @@ a {
   color: #6b6b6b;
   font-size: 16px;
   line-height: 1.7;
+  animation: slideRight 600ms ease-out 1.2s both;
 }
 
 /* =========================
@@ -88,6 +91,7 @@ a {
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 18px 50px rgba(0, 0, 0, 0.06);
+  animation: slideUp 600ms ease-out 1.6s both;
 }
 
 /* =========================
@@ -220,6 +224,30 @@ a {
 
 .content-link:hover {
   gap: 18px;
+}
+/* =========================
+   Tab Content Animation
+========================= */
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 /* =========================
