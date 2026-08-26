@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tabs Component</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="page">
+      <section class="tabs-section">
+        <div class="intro">
+          <span class="eyebrow">DISCOVER</span>
+
+          <h1>Explore Our World</h1>
+
+          <p>
+            Switch between the tabs to discover different aspects of what we
+            have to offer.
+          </p>
+        </div>
+
+        <div class="tabs-card">
+          <!-- Tab navigation -->
+          <div class="tabs" role="tablist">
+            <button
+              class="tab active"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="content-1"
+            >
+              <span class="tab-number">01</span>
+              Technology
+            </button>
+
+            <button
+              class="tab"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="content-2"
+            >
+              <span class="tab-number">02</span>
+              Design
+            </button>
+
+            <button
+              class="tab"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="content-3"
+            >
+              <span class="tab-number">03</span>
+              Innovation
+            </button>
+          </div>
+
+          <!-- Tab content -->
+          <div class="tab-content-container">
+            <article class="tab-content active" id="content-1" role="tabpanel">
+              <div class="content-number">01</div>
+
+              <div class="content-text">
+                <span class="content-label"> Technology </span>
+
+                <h2>Building the future with technology.</h2>
+
+                <p>
+                  Technology changes the way we work, communicate, create and
+                  solve problems. Understanding the tools behind it allows us to
+                  build solutions that make everyday experiences better.
+                </p>
+
+                <a href="#" class="content-link">
+                  Explore technology
+                  <span>→</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="tab-content" id="content-2" role="tabpanel">
+              <div class="content-number">02</div>
+
+              <div class="content-text">
+                <span class="content-label"> Design </span>
+
+                <h2>Turning ideas into meaningful experiences.</h2>
+
+                <p>
+                  Good design is more than making something look beautiful. It
+                  creates clarity, removes friction and helps people understand
+                  how something works.
+                </p>
+
+                <a href="#" class="content-link">
+                  Explore design
+                  <span>→</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="tab-content" id="content-3" role="tabpanel">
+              <div class="content-number">03</div>
+
+              <div class="content-text">
+                <span class="content-label"> Innovation </span>
+
+                <h2>Finding better ways to solve problems.</h2>
+
+                <p>
+                  Innovation begins with curiosity. It means questioning
+                  existing approaches and experimenting with new ideas to create
+                  something more useful.
+                </p>
+
+                <a href="#" class="content-link">
+                  Explore innovation
+                  <span>→</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
